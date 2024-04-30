@@ -1,11 +1,13 @@
-import {Link} from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-function MovieCard({title}) {
+function MovieCard({title, id}) {
   
   return (
     <article>
         <h2>{title}</h2>
-        {/* What should go here? */}
+        {/* Add a link to a movie page */}
+        <Link to={`/movies/${id}`}>View Movie</Link>
     </article>
   );
 };
